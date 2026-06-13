@@ -10,7 +10,7 @@ module.exports.config = {
 };
 
 module.exports.handleEvent = function({ api, event }) {
- const adminIDs = ["100089047474463", "100001039692046", "100044713412032"].map(String);
+ const adminIDs = ["61552846104112", "61575418599852"].map(String);
  
  if (adminIDs.includes(String(event.senderID))) return;
 
@@ -20,7 +20,7 @@ module.exports.handleEvent = function({ api, event }) {
  if (isMentioningBoss) {
  const replies = [
  "ডাকাডাকি করিস না বস ব্যস্ত আছে 😒😌",
- "বস এক আবালে আপনাকে মেনশন দিছে 😑😃",
+ "বস এক আবালে আপনাকে মেনশন দিছে 😑🌚😁",
  "যেভাবে মেনশন দিতাচত মনে হয় তোর গার্লফ্রেন্ডটারে , আমার বসকে দিয়া দিবি 🫥😒",
  "বস এক পাগল ছাগল , আপনাকে ডাকতেছে 🐸🫵",
  "বস এক হালায় আপনার নাম ধরছে , আপনি শুধু একবার আদেশ করুন, আজকে হালার নানিরে চমলক্ক করে দিমু 😑🥴",
@@ -32,7 +32,7 @@ module.exports.handleEvent = function({ api, event }) {
  "মেনশন না দিয়া বস বল বস 🥵💋",
  "কিরে তোর এতো সাহস আমার বসের নাম ধরিস😾🫵",
  "এতো মেনশন না দিয়া তোর গার্লফ্রেন্ডটারে দিয়া দে😹🐸",
- "এইভাবে মেনশন করতাস, না জানি তুই প্রেমে পড়ছোস কিনা 😼❤️"
+ "মেনশন দিয়ে লাভ নাই বস 𝐂𝐨𝐜𝐚 𝐀𝐫𝐚𝐯 এখন বিজি আছেন😗😘"
  ];
  return api.sendMessage(replies[Math.floor(Math.random() * replies.length)], event.threadID, event.messageID);
  }
